@@ -8,9 +8,9 @@ from sklearn.linear_model import LogisticRegression
 import pickle
 
 # Load the Logistic Regression model
-logreg_model = pickle.load(open('models/logreg_loan_approval_model.pkl', 'rb'))
-xgb_model = pickle.load(open('models/xgb_loan_approval_model.pkl', 'rb'))
-scaler = pickle.load(open('models/loan_approval_scaler.pkl', 'rb'))
+logreg_model = pickle.load(open('logreg_loan_approval_model.pkl', 'rb'))
+xgb_model = pickle.load(open('xgb_loan_approval_model.pkl', 'rb'))
+scaler = pickle.load(open('loan_approval_scaler.pkl', 'rb'))
 
 # Streamlit UI setup
 st.title('Loan Approval Prediction')
