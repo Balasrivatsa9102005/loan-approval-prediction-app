@@ -26,19 +26,20 @@ self_employed = st.selectbox("💼 Are you self-employed?", ['Yes', 'No'])
 no_of_dependents = st.slider("👨‍👩‍👧‍👦 Enter the number of dependents:", 0, 10, 0)
 
 # Slider for annual income
-income_annum = st.slider("💰 Enter your annual income:", 0.0, 1000000.0, 50000.0)
+income_annum = st.slider("💰 Enter your annual income:", 0.0, 1000000.0, 0.0)
 
 # Slider for loan amount
-loan_amount = st.slider("🏡 Enter your loan amount:", 0.0, 500000.0, 200000.0)
+loan_amount = st.slider("🏡 Enter your loan amount:", 0.0, 500000.0, 0.0)
 
 # Slider for loan term (in years)
-loan_term = st.slider("📅 Enter loan term (in years):", 1, 30, 10)
+loan_term = st.slider("📅 Enter loan term (in years):", 1, 30, 0)
 
 # Slider for CIBIL score
-cibil_score = st.slider("Enter your CIBIL score (e.g., 600, 750):", 300, 900, 650)
+cibil_score = st.slider("📊 Enter your CIBIL score (e.g., 600, 750):", 300, 900, 0)
 
 # Slider for assets
-assets = st.slider("🏠 Enter your total assets (residential, commercial, luxury, and bank):", 0.0, 5000000.0, 1000000.0)
+assets = st.slider("🏠 Enter your total assets (residential, commercial, luxury, and bank):", 0.0, 5000000.0, 0.0)
+
 
 # Function to make prediction
 def predict_loan_approval():
